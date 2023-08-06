@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Builder</h1>
+        <form id="resumeForm">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="school">School</label>
+            <input type="text" id="school" name="school" required>
+
+            <label for="university">University</label>
+            <input type="text" id="university" name="university" required>
+
+            <label for="skills">Skills (comma-separated)</label>
+            <input type="text" id="skills" name="skills" required>
+
+            <!-- Add more input fields for other sections of the resume -->
+
+            <button type="submit">Generate Resume</button>
+        </form>
+        <div id="resumePreview">
+            <!-- The generated resume will be displayed here -->
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
